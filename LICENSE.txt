@@ -1,4 +1,4 @@
-Copyright (c) 2014 moxing
+Copyright (c) 2016 bihang
 
 MIT License
 

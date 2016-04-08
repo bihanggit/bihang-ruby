@@ -1,13 +1,13 @@
-# Oklink
+# Bihang
 
-ruby sdk for oklink api
+ruby sdk for bihang api
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'oklink'
+gem 'bihang'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install oklink
+    $ gem install bihang
 
 
 

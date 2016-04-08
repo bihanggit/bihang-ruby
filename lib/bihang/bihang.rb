@@ -4,7 +4,7 @@ require 'hashie'
 require 'time'
 require 'securerandom'
 
-module Oklink 
+module Bihang 
   class Client
     include HTTParty
     
@@ -13,7 +13,7 @@ module Oklink
     OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
     
     BASE_URI = '/api/v1/'
-    WEB_URI =  'https://www.oklink.com/'
+    WEB_URI =  'https://www.bihang.com/'
 
     def initialize(api_key='', api_secret='', options={})
       @api_key = api_key
@@ -52,7 +52,7 @@ module Oklink
     end
 
     def self.build_whitelisted_cert_store
-      path = File.expand_path(File.join(File.dirname(__FILE__), 'ca-oklink.cer'))
+      path = File.expand_path(File.join(File.dirname(__FILE__), 'ca-bihang.cer'))
 
       certs = [ [] ]
       File.readlines(path).each{|line|
@@ -111,6 +111,6 @@ module Oklink
 
     class Error < StandardError; end
 
-    include APIOklink
+    include APIBihang
   end
 end

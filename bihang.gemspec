@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'oklink/version'
+require 'bihang/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "oklink"
-  spec.version       = Oklink::VERSION
+  spec.name          = "bihang"
+  spec.version       = Bihang::VERSION
   spec.authors       = ["liu tao"]
-  spec.email         = ["support@oklink.com"]
-  spec.summary       = %q{oklink api sdk}
+  spec.email         = ["support@bihang.com"]
+  spec.summary       = %q{bihang api sdk}
   spec.description   = %q{wrap api}
   spec.homepage      = ""
   spec.license       = "MIT"

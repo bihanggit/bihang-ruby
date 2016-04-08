@@ -1,4 +1,4 @@
-require "oklink"
+require "bihang"
 
-client = Oklink::Client.new(key, secret)
+client = Bihang::Client.new(key, secret)
 p client.buttonsListButton
